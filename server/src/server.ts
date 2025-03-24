@@ -3,6 +3,8 @@ import express from "express";
 import db from "./config/connection.js";
 import routes from "./routes/index.js";
 
+const PORT = process.env.PORT || 3001;
+
 await db();
 
 console.log("Database connected!");
